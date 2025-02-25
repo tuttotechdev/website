@@ -1,0 +1,31 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'website/css/main.css' %}">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="text-4xl">ciao</div>
+        <button class="btn btn-secondary">test</button>
+        <div>
+            <details class="dropdown">
+                <summary class="btn m-1">open or close</summary>
+                <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                </ul>
+            </details>
+        </div>
+        <div>
+            <form class="filter">
+                <input class="btn btn-square" type="reset" value="×"/>
+                <input class="btn" type="radio" name="frameworks" aria-label="Svelte"/>
+                <input class="btn" type="radio" name="frameworks" aria-label="Vue"/>
+                <input class="btn" type="radio" name="frameworks" aria-label="React"/>
+            </form>
+        </div>
+    </body>
+</html>
